@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <section class="contact">
+    <button class="switch" id="switch">
+        <span><i class="fas fa-sun"></i></span>
+        <span><i class="fas fa-moon"></i></span>
+    </button>
+    <div class="u-wrapper">
+      <div class="contact-content">
+
+        <form id="form" action="" class="form">
+          <h3 class="tag"><span>contactame</span></h3>
+          <label for="name">Nombre Completo <span>*</span></label>
+          <input name="name" required type="text" id="name" placeholder="Escriba su nombre">
+          <label for="email">Correo electrónico <span>*</span></label>
+          <input name="email" type="text" id="email" required placeholder="example@correo.com">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" class="text" cols="30" rows="10"></textarea>
+          <button type="submit" class="btn primary full">enviar mensaje</button>
+        </form>
+        <a href="mailto:dannysotalin@gmail.com" id="trucazo"></a>
+      </div>
+    </div>
+  </section>
+  <script src="app.js"></script>
+</body>
+</html>
