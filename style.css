@@ -2,8 +2,8 @@
 :root {
     --font: 'Oxygen', sans-serif;
     --primary: #42E2B8;
-    --gradient2: linear-gradient( #000428 90%, #004e92);
-    --gradient:linear-gradient(135deg, #56ccf2 20%, #2f80ed 80%) ;
+    --gradient2: linear-gradient(30deg, #004e92 5%, #000428 90%);
+    --gradient:linear-gradient( 120deg,#56ccf2 20%, #2f80ed 80%) ;
     --black: black;
   }
   
@@ -14,6 +14,8 @@
     padding: 0;
     box-sizing: border-box;
     height: 100vh;
+    overflow:auto;
+    background-size: cover;
     transition: .3s ease all;
   }
   /* 
@@ -84,6 +86,7 @@
     font-weight: bold;
     color: aliceblue;
     text-transform: uppercase;
+    margin: 0;
   
   }
   
@@ -121,7 +124,8 @@
   
   
   .contact {
-    margin-block-end: 2em;
+  
+    margin-block-end: 1em;
   }
   
   #trucazo {
@@ -148,6 +152,7 @@
     border: 2px solid var(--black);
     font-weight: bold;
     padding: 0 1.5em;
+  
  
   }
   .btn.full {
@@ -164,6 +169,35 @@
       background: var(--primary);
       color: var(--black);
   }
+/* 
+REDES  SOCIALES
+*/
+
+footer{
+text-align: center;
+}
+footer p{
+  font-size: 15px;
+  font-weight: bold;
+  color: wheat;
+}
+footer .social{
+justify-content: center;
+text-align: center;
+align-items: center;
+}
+footer a{
+  margin: 20px;
+ padding: 30px;
+  color: whitesmoke;
+  font-size: 30px;
+  transition: .3s ease all;
+
+}
+footer a:hover{
+  color: var(--black);
+}
+
 
   /* 
   MODO OSCURO
@@ -196,6 +230,12 @@
     background: var(--black);
     color: var(--primary);
   }
+  body.dark footer p{
+    color: whitesmoke;
+  }
+  body.dark footer a:hover{
+    color: aqua;
+  }
   /* 
   RESPONSIVE
   */
@@ -208,6 +248,7 @@
     .form{
         max-inline-size: 350px;
     }
+   
 }
 
 @media screen and (max-width:380px) {
@@ -218,6 +259,14 @@
     .form h3{
         margin: 20px 0;
     }
+    /* .form textarea{
+      height: 80px;
+    } */
+    footer p{
+       margin-top: 30px;
+        font-size: 12px;
+    }
+
 }
 @media screen and (max-width:320px) {
     
@@ -225,7 +274,25 @@
         max-inline-size: 280px;
     }
 
-
+    
+}
+@media screen and (max-height:700px) {
+ body{
+   height: 130vh;
+ }
+}
+@media screen and (max-height:600px) {
+  .form textarea{
+    height: 120px;
+}
+}
+@media screen and (max-height:500px) {
+  body{
+    height: 150vh;
+  }
+  .form textarea{
+    height: 80px;
+}
 }
 
 
