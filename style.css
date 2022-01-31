@@ -14,7 +14,7 @@
     padding: 0;
     box-sizing: border-box;
     height: 100vh;
-    overflow:auto;
+    overflow:hidden;
     background-size: cover;
     transition: .3s ease all;
   }
@@ -164,6 +164,7 @@
     background: var(--black);
     color: var(--primary);
     transition: .5s ease all;
+    margin-bottom: 40px;
   }
   .btn.primary:hover{
       background: var(--primary);
@@ -176,26 +177,20 @@ REDES  SOCIALES
 footer{
 text-align: center;
 }
-footer p{
-  font-size: 15px;
-  font-weight: bold;
-  color: wheat;
-}
-footer .social{
-justify-content: center;
-text-align: center;
-align-items: center;
-}
-footer a{
-  margin: 20px;
- padding: 30px;
-  color: whitesmoke;
-  font-size: 30px;
-  transition: .3s ease all;
 
+footer a {
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: .3s ease all;
+  color: rgb(9, 78, 78);
+  font-size: 17px;
+  
 }
-footer a:hover{
-  color: var(--black);
+
+footer a:hover {
+  letter-spacing: 4px;
+  color: crimson;
 }
 
 
@@ -230,8 +225,8 @@ footer a:hover{
     background: var(--black);
     color: var(--primary);
   }
-  body.dark footer p{
-    color: whitesmoke;
+  body.dark footer a{
+    color:darkcyan;
   }
   body.dark footer a:hover{
     color: aqua;
@@ -245,8 +240,12 @@ footer a:hover{
       }
   }
   @media screen and (max-width:480px) {
+    body{
+      overflow: auto;
+    }
     .form{
         max-inline-size: 350px;
+        margin-top: 30px;
     }
    
 }
@@ -262,18 +261,16 @@ footer a:hover{
     /* .form textarea{
       height: 80px;
     } */
-    footer p{
-       margin-top: 30px;
-        font-size: 12px;
-    }
+    
 
 }
 @media screen and (max-width:320px) {
     
     .form{
         max-inline-size: 280px;
+        
     }
-
+   
     
 }
 @media screen and (max-height:700px) {
@@ -288,10 +285,15 @@ footer a:hover{
 }
 @media screen and (max-height:500px) {
   body{
-    height: 150vh;
+    height: 100vh;
+    overflow: auto;
   }
+  
   .form textarea{
     height: 80px;
+}
+footer a{
+  font-size: 2px;
 }
 }
 
